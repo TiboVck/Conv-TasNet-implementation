@@ -82,6 +82,7 @@ class TasNet(nn.Module):
 
 def test_conv_tasnet():
     x = torch.rand(2, 32000)
+    print(x)
     nnet = TasNet()
     x = nnet(x)
     s1 = x[0]
